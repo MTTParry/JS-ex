@@ -15,3 +15,8 @@ for (let i = 0; i < xs.count; i++) {
     zs.push(add(xs[i], ys[i]))
 }
 console.log(zs)
+
+
+function hi(whom) {
+    return "Hello " + whom + "!"
+}
