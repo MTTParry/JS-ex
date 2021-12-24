@@ -6,6 +6,7 @@ function add(x, y) {
     return x + y
 }
 
+// Adding a comment
 
 const xs = [1, 2, 3, 4, 5, 6, 7]
 const ys = [1, 2, 3, 4, 5, 6, 7]
