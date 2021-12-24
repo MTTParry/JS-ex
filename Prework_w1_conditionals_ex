@@ -347,6 +347,12 @@ console.log(exercise10(9)); // Fizz
 console.log(exercise10(25)); // Buzz
 console.log(exercise10(13)); // 13 
 
+function testingCodeChanges() {
+  return 10;
+}
+
+console.log(testingCodeChanges());
+
 // Congrats, you made it to the end! You rock!
 // Did you find this easy or hard? If you used references, which ones helped you?
 // Please answer in a comment below.
