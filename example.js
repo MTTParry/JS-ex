@@ -16,6 +16,7 @@ for (let i = 0; i < xs.count; i++) {
 }
 console.log(zs)
 
+// Another Change in example01
 
 function hi(whom) {
     return "Hello " + whom + "!"
