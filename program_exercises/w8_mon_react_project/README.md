@@ -1,3 +1,9 @@
+Practice making react apps
+Has a parent and 3 children
+
+It's a gratitude list that starts with 3 things
+user can add more things to the list
+-------------------------------------
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

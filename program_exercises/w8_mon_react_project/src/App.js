@@ -1,19 +1,32 @@
-import { ReactComponent as Logo } from './logo.svg';
+import { useState } from 'react';
 import './App.css';
-import Posts from './components/Posts';
+import Form from './components/form';
+import Header from './components/header';
+import Item from './components/item';
 
-function App() {
+export default function App() {
+  const [items, setItems] = useState([
+    { text: "Petting a cat" },
+    { text: "Hanging out with a friend" },
+    { text: "Surviving bootcamp"}
+  ]);
+
+  const addItem = (text) => {
+    const newItems = [...items, { text }];
+    setItems(newItems);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <Logo style={{ height: 200 }} />
-        <h1>
-          "React Posts Sharer"
-        </h1>
-        <Posts />
-      </header>
+      <Header />
+      {items.map((item, index) => (
+        <Item
+          key={index}
+          index={index}
+          item={item}
+        />
+      ))}
+      <Form addItem={addItem} />
     </div>
   );
 }
-
-export default App;
